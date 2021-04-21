@@ -7,7 +7,17 @@ const listaDestinos = new Array(
     `Salvador`,
     `São Paulo`,
     `Rio de Janeiro`
+    
 );
+
+listaDestinos.push(`Curitiba`) // adicionando um item na lista;
 
 console.log("Destinos possíveis: ");
 console.log(listaDestinos); 
+
+listaDestinos.splice(1,1);
+
+console.log(listaDestinos);
+
+console.log(listaDestinos[1], listaDestinos[0]);
+
