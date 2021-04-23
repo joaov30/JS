@@ -7,24 +7,52 @@ const listaDestinos = new Array(
 );
 
 
-const idadeComprador = 17;
-const estaAcompanhada = true;
+const idadeComprador = 18;
+const estaAcompanhada = false;
+const temPassagemComprada = true;
+
 console.log("Destinos possíveis: ");
 console.log(listaDestinos);
 
-if (idadeComprador >= 18) {
+//  if (idadeComprador >= 18) {
 
-    console.log("Comprador maior de Idade");
+//   console.log("Comprador maior de Idade");
+//  listaDestinos.splice(1, 1); //removendo item
+
+//    } else if (estaAcompanhada == true) {
+
+//   console.log("Comprador esta acompanhado");
+// listaDestinos.splice(1, 1); //removendo item
+
+//} else {
+
+//    console.log("Comprador é menor de idade não será possivel realizar a compra");
+
+//}
+
+//console.log(listaDestinos);
+
+if (idadeComprador >= 18 || estaAcompanhada == true) {
+
+    console.log("Boa Viagem");
     listaDestinos.splice(1, 1); //removendo item
 
-} else if (estaAcompanhada) {
-
-    console.log("Comprador esta acompanhado");
-    listaDestinos.splice(1, 1); //removendo item
 
 } else {
 
     console.log("Comprador é menor de idade não será possivel realizar a compra");
+
+}
+
+console.log("Emabarque: \n\n");
+
+if(idadeComprador >= 18 && temPassagemComprada){
+
+    console.log("Boa Viagem");
+
+}else{
+
+    console.log("Você não pode embarcar");
 
 }
 
