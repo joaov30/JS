@@ -41,3 +41,15 @@ if (podeComprar && destinoExiste) {
     console.log("desculpe tivemos um erro!");
 }
 
+
+
+for(let i = 0 ; i < 3; i++) {
+    
+
+    if(listaDestinos[i] == destino){
+
+        destinoExiste = true;
+        
+    }
+    
+}
